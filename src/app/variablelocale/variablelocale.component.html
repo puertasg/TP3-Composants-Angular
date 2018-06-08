@@ -1,0 +1,8 @@
+<div>
+  <input type="text" #customVariable placeholder="Saisir une valeur">
+  <div>test variable locale : {{customVariable.value}}</div>
+</div>
+
+<div>
+  <button (click)="customVariable.focus()">Focus sur l'input</button>
+</div>
