@@ -16,25 +16,4 @@ export class ForComponent implements OnInit {
 
   ngOnInit() {
   }
-
-  colorElement(first: boolean, last: boolean): string {
-    if (first) {
-      return "red";
-    }
-    else if (last) {
-      return "green";
-    }
-    else {
-      return "black";
-    }
-  }
-
-  colorBackgroundElement(odd: boolean): string {
-    if (odd) {
-      return "gray"
-    }
-    else {
-      return "";
-    }
-  }
 }
