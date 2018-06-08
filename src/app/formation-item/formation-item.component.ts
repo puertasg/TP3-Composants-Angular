@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Formation } from '../classes/Formation';
 
 @Component({
@@ -23,6 +23,15 @@ export class FormationItemComponent implements OnInit {
   @Input()
   odd: boolean;
   constructor() { }
+
+  @Output()
+  //Va permettre d'envoyer des events formationSelected au composant parent
+  formationSelected: EventEmitter<Formation> = new EventEmitter<Formation>();
+
+  selectFormation() {
+    //Envoi d'un event formationSelected
+    this.formationSelected.emit(this.formation);
+  }
 
   ngOnInit() {
   }

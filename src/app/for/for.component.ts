@@ -16,4 +16,8 @@ export class ForComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  handleFormationSelected(formation) {
+    alert(formation.nom);
+  }
 }

@@ -1,6 +1,6 @@
 <!--classeAAppliquer: variableFlag-->
 <div [ngClass]="{first: first, last: last, odd: odd}">
-  <h4>{{index}} - {{formation?.nom | titlecase}}</h4>
+  <h4 (click)="selectFormation()">{{index}} - {{formation?.nom | titlecase}}</h4>
   <p>Prix : {{formation?.prix | currency:'EUR'}}</p>
   <p>Date de début : {{formation?.dateDebut | date:'dd/MM/yyyy'}}</p>
   <p>Date de fin : {{formation?.dateFin | date:'dd/MM/yyyy'}}</p>
