@@ -6,7 +6,7 @@
 
 <ul>
   <li *ngFor="let formation of formations; index as i; first as f; last as l; odd as o">
-    <!--   nom de la variable qui sera @Input()/variable à bind-->
+    <!--      variable @Input()/variable à bind-->
     <app-formation-item [index]="i" [formation]="formation" [first]="f" [last]="l" [odd]="o"></app-formation-item>
   </li>
 </ul>
