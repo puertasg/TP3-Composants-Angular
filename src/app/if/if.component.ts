@@ -7,15 +7,14 @@ import { Formation } from '../classes/Formation';
   styleUrls: ['./if.component.css']
 })
 export class IfComponent implements OnInit {
-  formation: Formation = new Formation();
+  formation: Formation = new Formation("Formation if", "description du if");
   isHidden: boolean = true;
   constructor() { }
 
   ngOnInit() {
   }
 
-  switchHidden()
-  {
+  switchHidden() {
     this.isHidden = !this.isHidden;
   }
 }

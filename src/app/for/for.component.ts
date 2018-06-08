@@ -7,8 +7,8 @@ import { Formation } from '../classes/Formation';
   styleUrls: ['./for.component.css']
 })
 export class ForComponent implements OnInit {
-  formation1: Formation = new Formation();
-  formation2: Formation = new Formation();
+  formation1: Formation = new Formation("Formation 1", "La première formation");
+  formation2: Formation = new Formation("Formation 2", "La deuxième formation");
 
   formations: Array<Formation> = [this.formation1, this.formation2];
 

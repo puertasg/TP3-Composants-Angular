@@ -10,13 +10,13 @@ export class InterpolateComponent implements OnInit {
 
   prenom: String = "Gauthier";
   nom: String = "Puertas";
-  formation: Formation = new Formation();
+  formation: Formation = new Formation("Une première formation", "La description de la première formation");
   formationJS: Formation;
   constructor() { }
 
   ngOnInit() {
     setTimeout(() => {
-      this.formationJS = new Formation();
+      this.formationJS = new Formation("Formation JS", "Description de la formation JS");
     }, 3000)
   }
 
