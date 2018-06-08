@@ -1,0 +1,5 @@
+<p *ngIf="isHidden">
+  {{formation.nom}}, {{formation.description}}
+</p>
+
+<button type="button" (click)=switchHidden()>Masquer/Afficher la formation</button>

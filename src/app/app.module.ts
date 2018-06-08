@@ -6,6 +6,7 @@ import { FormationComponent } from './formation/formation.component';
 import { InterpolateComponent } from './interpolate/interpolate.component';
 import { BindingComponent } from './binding/binding.component';
 import { VariablelocaleComponent } from './variablelocale/variablelocale.component';
+import { IfComponent } from './if/if.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { VariablelocaleComponent } from './variablelocale/variablelocale.compone
     FormationComponent,
     InterpolateComponent,
     BindingComponent,
-    VariablelocaleComponent
+    VariablelocaleComponent,
+    IfComponent
   ],
   imports: [
     BrowserModule
