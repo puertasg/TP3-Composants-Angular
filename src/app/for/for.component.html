@@ -1,3 +1,9 @@
+<div [ngSwitch]="formations.length">
+  <h1 *ngSwitchCase="0">Aucune formation</h1>
+  <h1 *ngSwitchCase="1">Une formation</h1>
+  <h1 *ngSwitchDefault>Formations</h1>
+</div>
+
 <ul>
   <li *ngFor="let formation of formations; index as i; first as f; last as l; odd as o">
     <p [style.color]="colorElement(f, l)" [style.background-color]="colorBackgroundElement(o)">{{i}} - {{formation.nom}}</p>
