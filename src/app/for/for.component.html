@@ -6,6 +6,6 @@
 
 <ul>
   <li *ngFor="let formation of formations; index as i; first as f; last as l; odd as o">
-    <p [style.color]="colorElement(f, l)" [style.background-color]="colorBackgroundElement(o)">{{i}} - {{formation.nom}}</p>
+    <p [ngStyle]="{color: colorElement(f, l), background: colorBackgroundElement(o)}">{{i}} - {{formation.nom}}</p>
   </li>
 </ul>
