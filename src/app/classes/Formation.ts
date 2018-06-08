@@ -7,6 +7,7 @@ class Formation {
     constructor(nom: string, description: string, prix?: number, dateDebut?: Date, dateFin?: Date) {
         this._nom = nom;
         this._description = description;
+        
         if (prix) {
             this._prix = prix;
         }
