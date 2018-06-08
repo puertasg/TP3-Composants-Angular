@@ -7,6 +7,7 @@ import { InterpolateComponent } from './interpolate/interpolate.component';
 import { BindingComponent } from './binding/binding.component';
 import { VariablelocaleComponent } from './variablelocale/variablelocale.component';
 import { IfComponent } from './if/if.component';
+import { ForComponent } from './for/for.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { IfComponent } from './if/if.component';
     InterpolateComponent,
     BindingComponent,
     VariablelocaleComponent,
-    IfComponent
+    IfComponent,
+    ForComponent
   ],
   imports: [
     BrowserModule
