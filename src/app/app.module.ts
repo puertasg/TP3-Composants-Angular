@@ -9,6 +9,7 @@ import { VariablelocaleComponent } from './variablelocale/variablelocale.compone
 import { IfComponent } from './if/if.component';
 import { ForComponent } from './for/for.component';
 import { FormationItemComponent } from './formation-item/formation-item.component';
+import { OnchangeComponent } from './onchange/onchange.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FormationItemComponent } from './formation-item/formation-item.componen
     VariablelocaleComponent,
     IfComponent,
     ForComponent,
-    FormationItemComponent
+    FormationItemComponent,
+    OnchangeComponent
   ],
   imports: [
     BrowserModule
