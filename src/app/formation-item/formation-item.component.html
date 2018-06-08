@@ -1,0 +1,6 @@
+<div [class.first]="first" [class.last]="last" [class.odd]="odd">
+  <h4>{{index}} - {{formation?.nom | titlecase}}</h4>
+  <p>Prix : {{formation?.prix | currency:'EUR'}}</p>
+  <p>Date de début : {{formation?.dateDebut | date:'dd/MM/yyyy'}}</p>
+  <p>Date de fin : {{formation?.dateFin | date:'dd/MM/yyyy'}}</p>
+</div>

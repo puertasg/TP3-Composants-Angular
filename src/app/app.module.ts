@@ -8,6 +8,7 @@ import { BindingComponent } from './binding/binding.component';
 import { VariablelocaleComponent } from './variablelocale/variablelocale.component';
 import { IfComponent } from './if/if.component';
 import { ForComponent } from './for/for.component';
+import { FormationItemComponent } from './formation-item/formation-item.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ForComponent } from './for/for.component';
     BindingComponent,
     VariablelocaleComponent,
     IfComponent,
-    ForComponent
+    ForComponent,
+    FormationItemComponent
   ],
   imports: [
     BrowserModule
